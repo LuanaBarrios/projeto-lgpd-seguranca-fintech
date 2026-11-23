@@ -1,0 +1,14 @@
+id,tipo,usuario_ou_origem,inicio,descricao
+INC-06,account_takeover,C03796,2026-10-20 05:55:00,Dispositivo novo + sequência de Pix de alto valor em minutos
+INC-06,account_takeover,C04095,2026-08-29 03:13:00,Dispositivo novo + sequência de Pix de alto valor em minutos
+INC-06,account_takeover,C02778,2026-08-24 03:06:00,Dispositivo novo + sequência de Pix de alto valor em minutos
+INC-06,account_takeover,C02821,2026-10-07 03:38:00,Dispositivo novo + sequência de Pix de alto valor em minutos
+INC-06,account_takeover,C02087,2026-09-12 01:39:00,Dispositivo novo + sequência de Pix de alto valor em minutos
+INC-06,account_takeover,C01301,2026-09-22 01:06:00,Dispositivo novo + sequência de Pix de alto valor em minutos
+INC-06,account_takeover,C03575,2026-09-27 04:50:00,Dispositivo novo + sequência de Pix de alto valor em minutos
+INC-06,account_takeover,C00631,2026-09-25 02:31:00,Dispositivo novo + sequência de Pix de alto valor em minutos
+INC-01,acesso_indevido_interno,u004,2026-09-01,Consultas repetidas a clientes VIP sem relação com atendimento
+INC-02,exfiltracao_dados,u013,2026-10-11 02:17:00,"Exportações de ~25 mil registros às 2h de um domingo, IP externo"
+INC-03,credential_stuffing,45.155.205.10;185.220.101.7;91.240.118.22,2026-09-23 03:00:00,~900 falhas de login em ~1h e 12 sucessos a partir de 3 IPs
+INC-04,abuso_api_parceiro,parceiro_lojaX,2026-10-20 09:00:00,"Parceiro consulta 300 clientes sequencialmente, acima do contrato"
+INC-05,conta_desligado_ativa,u001,2026-09-28,Usuário desligado em 15/09 acessando o CRM à noite de IP externo
