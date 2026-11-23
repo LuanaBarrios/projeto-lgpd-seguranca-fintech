@@ -14,7 +14,7 @@ Simular, de ponta a ponta, o trabalho de um(a) analista de privacidade e seguran
 | Fase | Pasta | O que entrega | Status |
 |---|---|---|---|
 | 1. Mapeamento LGPD | `01-mapeamento-lgpd/` | Inventário de dados (15 itens, com base legal) e matriz de risco (11 riscos) | Pronta |
-| 2. Análise de logs | `02-analise-logs/` | Análise em Python dos logs de acesso para detectar anomalias que evidenciem os riscos | A fazer |
+| 2. Análise de logs | `02-analise-logs/` | Análise em Python dos logs de acesso e transações para detectar anomalias que evidenciem os riscos (R01 a R06) | Pronta |
 | 3. Dashboard | `03-dashboard/` | Painel cruzando risco de privacidade com incidentes detectados | A fazer |
 
 ## Dados (`dados/`)
@@ -29,8 +29,17 @@ Base sintética gerada com seed fixa (reproduzível). Período: 01/08/2026 a 31/
 Detalhes em `dados/LEIAME.md`.
 
 ## Como rodar
-A Fase 2 usará Python 3 com pandas. As instruções de execução serão adicionadas em `02-analise-logs/` quando a fase for concluída.
+A Fase 2 usa Python 3 com pandas. Os comandos de execução e a metodologia estão em `02-analise-logs/RELATORIO.md`.
 
 ## Metodologia
 - **Risco** = probabilidade (1 a 5) × impacto (1 a 5). Baixo até 6, médio de 7 a 12, alto de 13 a 19, crítico a partir de 20.
 - **Base legal**: indicada por artigo da LGPD em cada item do inventário.
+
+## Resultados da Fase 2
+O script `02-analise-logs/detectar_anomalias.py` gerou 13 alertas (`alertas_detectados.csv`) cobrindo os 6 tipos de risco monitorados. Comparados ao gabarito **pelo conteúdo** (usuário ou origem, data e tipo), os 13 incidentes plantados foram encontrados, **sem falsos positivos**. Metodologia, limites usados e análise de sensibilidade estão em `02-analise-logs/RELATORIO.md`.
+
+## Limitações
+- **Dados sintéticos e fáceis.** Os incidentes plantados são bem distintos do tráfego normal, e os padrões são mais regulares que os reais (por exemplo, consultas exatamente a cada 40 segundos). Em produção, a precisão seria menor e seria preciso detectar regularidade aproximada.
+- **Conhecimento prévio do gabarito.** O analista soube previamente o número de linhas do gabarito, o que pode ter influenciado o agrupamento dos alertas. A validação foi feita pelo conteúdo, não pela contagem.
+- **Datas aproximadas no gabarito.** Em alguns incidentes a data de início do gabarito é nominal, e a análise identifica o primeiro dia efetivamente observado nos logs.
+- **Escopo didático.** Bases legais e prazos de retenção são propostas para o exercício e devem ser validados em um caso real.
