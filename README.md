@@ -26,6 +26,8 @@ Base sintética gerada com seed fixa (reproduzível). Período: 01/08/2026 a 31/
 - `logs_acesso.csv`: cerca de 35 mil eventos de acesso
 - `GABARITO_incidentes_plantados.csv`: incidentes inseridos de propósito, usados só para medir a análise da Fase 2 (não consultar antes de analisar)
 
+A base é gerada por `dados/gerar_base.py` (Python 3, pandas, numpy e faker). Para regenerar: `python dados/gerar_base.py dados` (sobrescreve os CSVs com os mesmos valores, pela seed fixa).
+
 Detalhes em `dados/LEIAME.md`.
 
 ## Como rodar
