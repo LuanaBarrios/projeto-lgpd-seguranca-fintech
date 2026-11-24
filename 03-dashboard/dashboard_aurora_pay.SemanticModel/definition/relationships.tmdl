@@ -1,0 +1,34 @@
+relationship 4fa8c874-aafb-488e-857a-75fd20b4e48c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_alertas.inicio
+	toColumn: LocalDateTable_f9709d6c-5dac-473a-9c5f-4c981860318b.Date
+
+relationship a2dde6d1-7cbb-4b5a-861a-0c1f8dceb716
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_alertas.data
+	toColumn: LocalDateTable_5106f020-886a-4249-93e5-419db00ed66f.Date
+
+relationship AutoDetected_e0077492-704f-4941-9e3d-dda72566ce2c
+	fromColumn: fato_alertas.risco_id
+	toColumn: dim_risco.risco_id
+
+relationship Relationship
+	fromColumn: fato_alertas.data
+	toColumn: dim_data.Data
+
+relationship AutoDetected_11e48a46-9ddc-4ecf-8c7d-539cdc0ef980
+	fromColumn: ponte_risco_dado.risco_id
+	toColumn: dim_risco.risco_id
+
+relationship AutoDetected_4d588791-e51b-462d-ad86-41c2792d9abf
+	fromColumn: ponte_risco_dado.dado_id
+	toColumn: dim_inventario.dado_id
+
+relationship 991d16f5-d585-4b05-aca7-be5a7a07e3ec
+	fromColumn: dim_risco.probabilidade
+	toColumn: dim_probabilidade.Probabilidade
+
+relationship 327f324a-a773-43e0-8f92-cbf9e8dda61d
+	fromColumn: dim_risco.impacto
+	toColumn: dim_impacto.Impacto
+

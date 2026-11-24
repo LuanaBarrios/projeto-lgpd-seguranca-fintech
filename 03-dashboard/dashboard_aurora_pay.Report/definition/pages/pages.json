@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.1.0/schema.json",
+  "pageOrder": [
+    "p1_executiva",
+    "p2_riscos",
+    "p3_linha_tempo",
+    "p4_inventario"
+  ],
+  "activePageName": "p4_inventario"
+}

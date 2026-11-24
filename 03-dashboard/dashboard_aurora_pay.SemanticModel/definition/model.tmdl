@@ -1,0 +1,28 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["dim_risco","fato_alertas","dim_inventario","ponte_risco_dado","PastaDados"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_risco
+ref table fato_alertas
+ref table DateTableTemplate_291b30f5-3c47-40a3-86eb-ba72ea4acb83
+ref table LocalDateTable_f9709d6c-5dac-473a-9c5f-4c981860318b
+ref table LocalDateTable_5106f020-886a-4249-93e5-419db00ed66f
+ref table dim_inventario
+ref table ponte_risco_dado
+ref table dim_data
+ref table dim_impacto
+ref table dim_probabilidade
+
+ref cultureInfo pt-BR
+

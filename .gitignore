@@ -15,3 +15,6 @@ Thumbs.db
 # Saídas temporárias
 *.log
 .env
+# Power BI (cache e configurações locais)
+**/.pbi/cache.abf
+**/.pbi/localSettings.json

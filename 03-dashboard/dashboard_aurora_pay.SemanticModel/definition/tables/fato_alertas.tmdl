@@ -1,0 +1,137 @@
+table fato_alertas
+	lineageTag: d4f45fcf-d502-4528-bdcd-2cd2d6439a96
+
+	/// Quantidade de alertas detectados nos logs (Fase 2).
+	measure 'Total Alertas' = COUNTROWS(fato_alertas)
+		formatString: 0
+		displayFolder: 2. Alertas
+		lineageTag: 66690e03-1687-465b-a625-bd639f1c7872
+
+	/// Alertas iniciados fora do horário comercial ou em fim de semana.
+	measure 'Alertas Fora do Expediente' = CALCULATE([Total Alertas], fato_alertas[fora_do_expediente] = "Sim")
+		formatString: 0
+		displayFolder: 2. Alertas
+		lineageTag: 4e9e7b52-1ab9-4dc2-a5cd-d81970fb37c8
+
+	/// Cor semântica da severidade do alerta.
+	measure 'Cor da Severidade' = SWITCH(SELECTEDVALUE(fato_alertas[severidade]), "Crítico", "#C0392B", "Alto", "#E67E22", "Médio", "#F1C40F", "Baixo", "#27AE60", "#FFFFFF")
+		isHidden
+		displayFolder: 9. Auxiliares (formatação)
+		lineageTag: 4c8accab-ba17-4134-ae71-78a317680a19
+
+	/// Total de alertas mostrando 0 (em vez de vazio) para riscos sem alerta.
+	measure 'Alertas (com zero)' = COALESCE([Total Alertas], 0)
+		formatString: 0
+		displayFolder: 2. Alertas
+		lineageTag: 62aa5cb5-81f6-434c-a474-1f53189d4267
+
+	column alerta_id
+		dataType: string
+		isHidden
+		lineageTag: db2cc70a-a6c0-44b0-b690-cbb39c1728aa
+		summarizeBy: none
+		sourceColumn: alerta_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column risco_id
+		dataType: string
+		isHidden
+		lineageTag: 2b9abbbc-6d43-4c25-aff5-b5004c88f805
+		summarizeBy: none
+		sourceColumn: risco_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column usuario_ou_origem
+		dataType: string
+		lineageTag: 57d7f34d-0d03-47d4-a788-3c3220a34d2c
+		summarizeBy: none
+		sourceColumn: usuario_ou_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_origem
+		dataType: string
+		lineageTag: 4ea4e140-7285-49f1-8576-45a159413f1b
+		summarizeBy: none
+		sourceColumn: tipo_origem
+
+		annotation SummarizationSetBy = Automatic
+
+	column inicio
+		dataType: dateTime
+		formatString: dd/MM/yyyy HH:mm
+		lineageTag: e5df098a-7b95-4aa2-a607-5771776ccd4d
+		summarizeBy: none
+		sourceColumn: inicio
+
+		variation Variação
+			isDefault
+			relationship: 4fa8c874-aafb-488e-857a-75fd20b4e48c
+			defaultHierarchy: LocalDateTable_f9709d6c-5dac-473a-9c5f-4c981860318b.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column data
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 0ce82cb2-276f-451e-a4d3-13ecb0027fb9
+		summarizeBy: none
+		sourceColumn: data
+
+		variation Variação
+			isDefault
+			relationship: a2dde6d1-7cbb-4b5a-861a-0c1f8dceb716
+			defaultHierarchy: LocalDateTable_5106f020-886a-4249-93e5-419db00ed66f.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column hora
+		dataType: int64
+		formatString: 0
+		lineageTag: e9881201-7eae-4878-9ec7-698499262cf4
+		summarizeBy: sum
+		sourceColumn: hora
+
+		annotation SummarizationSetBy = Automatic
+
+	column fora_do_expediente
+		dataType: string
+		lineageTag: 41ea7f6b-9d8e-4967-a6fc-d475142a3ebd
+		summarizeBy: none
+		sourceColumn: fora_do_expediente
+
+		annotation SummarizationSetBy = Automatic
+
+	column severidade
+		dataType: string
+		lineageTag: 9caf0950-6600-42e2-8a9b-e58a3208cacf
+		summarizeBy: none
+		sourceColumn: severidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column evidencia
+		dataType: string
+		lineageTag: 054c0931-3ba0-4e1e-bf1b-dd7062dd1338
+		summarizeBy: none
+		sourceColumn: evidencia
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_alertas = m
+		mode: import
+		source =
+				let
+				  Origem = Csv.Document(File.Contents(PastaDados & "fato_alertas.csv"), [Delimiter = ",", Columns = 10, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(Origem, [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"alerta_id", type text}, {"risco_id", type text}, {"usuario_ou_origem", type text}, {"tipo_origem", type text}, {"inicio", type datetime}, {"data", type date}, {"hora", Int64.Type}, {"fora_do_expediente", type text}, {"severidade", type text}, {"evidencia", type text}})
+				in
+				  #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

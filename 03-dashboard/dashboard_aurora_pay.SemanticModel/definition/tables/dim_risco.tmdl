@@ -1,0 +1,258 @@
+table dim_risco
+	lineageTag: 0d1dfc8c-c39a-4b53-8315-c3d5c88e6545
+
+	/// Quantidade de riscos da matriz (Fase 1).
+	measure 'Total Riscos' = COUNTROWS(dim_risco)
+		formatString: 0
+		displayFolder: 1. Riscos
+		lineageTag: e9f766b3-0443-45d7-a904-56e5e243316a
+
+	/// Riscos com nível Crítico ou Alto (score >= 13).
+	measure 'Riscos Críticos e Altos' = CALCULATE([Total Riscos], dim_risco[nivel] IN {"Crítico","Alto"})
+		formatString: 0
+		displayFolder: 1. Riscos
+		lineageTag: 70821a31-3808-4c56-8bb2-c44b16ae398c
+
+	/// Riscos que tiveram ao menos um alerta nos logs (Fase 2).
+	measure 'Riscos com Evidência' = CALCULATE([Total Riscos], dim_risco[tem_evidencia] = "Sim")
+		formatString: 0
+		displayFolder: 1. Riscos
+		lineageTag: 7fd2d01f-fb6e-48ea-8cca-0f79eb948677
+
+	/// Riscos sem nenhum alerta nos logs analisados (sem evidência). Pode faltar telemetria ou o risco não ser observável em logs (R07 fornecedor, R09 processo).
+	measure 'Riscos sem Evidência' = CALCULATE([Total Riscos], dim_risco[tem_evidencia] = "Não")
+		formatString: 0
+		displayFolder: 1. Riscos
+		lineageTag: 72e298a7-3801-4473-9e3c-b8112945a126
+
+	/// Riscos com evidência ÷ total de riscos.
+	measure '% Cobertura de Detecção' = DIVIDE([Riscos com Evidência], [Total Riscos])
+		formatString: 0%
+		displayFolder: 1. Riscos
+		lineageTag: e942b424-ba3c-4276-8265-041d3f520499
+
+	/// Média de probabilidade × impacto dos riscos no filtro.
+	measure 'Score Médio' = AVERAGE(dim_risco[score])
+		formatString: 0.0
+		displayFolder: 1. Riscos
+		lineageTag: b93e2c3e-2033-435f-90c8-7159c2a70e2d
+
+	/// Cor da célula da matriz pela zona P × I (README: até 6 Baixo, 7-12 Médio, 13-19 Alto, 20+ Crítico); tom apagado quando a célula não tem risco.
+	measure 'Cor do Score' =
+			VAR p = SELECTEDVALUE(dim_probabilidade[Probabilidade])
+			VAR i = SELECTEDVALUE(dim_impacto[Impacto])
+			VAR s = p * i
+			VAR temRisco = NOT ISBLANK([Total Riscos])
+			RETURN IF(
+			    ISBLANK(p) || ISBLANK(i), BLANK(),
+			    SWITCH(TRUE(),
+			        s >= 20, IF(temRisco, "#C0392B", "#4A1D1A"),
+			        s >= 13, IF(temRisco, "#E67E22", "#4D3017"),
+			        s >= 7,  IF(temRisco, "#F1C40F", "#4A4216"),
+			                 IF(temRisco, "#27AE60", "#163D2A")))
+		isHidden
+		displayFolder: 9. Auxiliares (formatação)
+		lineageTag: 17f4f887-e26e-491b-bc60-c8c9d4236131
+
+	/// Texto branco sobre vermelho e escuro sobre amarelo, laranja e verde (contraste).
+	measure 'Cor do Texto da Célula' =
+			VAR s = SELECTEDVALUE(dim_probabilidade[Probabilidade]) * SELECTEDVALUE(dim_impacto[Impacto])
+			RETURN IF(s >= 20, "#FFFFFF", "#0B1426")
+		isHidden
+		displayFolder: 9. Auxiliares (formatação)
+		lineageTag: 7eb6c6d5-b9bb-41e6-a615-66ceb1e215a0
+
+	/// Número de riscos da célula como texto, para a grade 1-5 aparecer inteira (células vazias ficam em branco).
+	measure 'Riscos na Célula' = VAR n = [Total Riscos] RETURN IF(ISBLANK(n), "", FORMAT(n, "0"))
+		isHidden
+		displayFolder: 9. Auxiliares (formatação)
+		lineageTag: 44d7e328-7b5b-48c0-bb59-fbf1a6544330
+
+	/// Apaga as linhas de riscos com 0 alertas, exceto o ponto cego, que fica destacado.
+	measure 'Cor do Texto da Linha' =
+			VAR pc = SELECTEDVALUE(dim_risco[ponto_cego])
+			VAR a = [Alertas (com zero)]
+			RETURN IF(pc = "Sim", "#FFFFFF", IF(a = 0, "#6B7A90", "#FFFFFF"))
+		isHidden
+		displayFolder: 9. Auxiliares (formatação)
+		lineageTag: 0439e7df-33f4-43ad-a1d8-0896969fa1f1
+
+	/// Fundo laranja-escuro na linha do ponto cego.
+	measure 'Fundo da Linha' = IF(SELECTEDVALUE(dim_risco[ponto_cego]) = "Sim", "#4D3017", "#12223D")
+		isHidden
+		displayFolder: 9. Auxiliares (formatação)
+		lineageTag: 7bf71203-437b-4bce-b109-517b9361f3d1
+
+	/// Sugestão de controle do risco, para tooltips.
+	measure 'Controle Recomendado' = SELECTEDVALUE(dim_risco[controle_recomendado])
+		isHidden
+		displayFolder: 9. Auxiliares (formatação)
+		lineageTag: fe8773ad-caef-42a3-9be0-be12527552c7
+
+	/// Lista dos riscos com regra de detecção implementada na Fase 2 (os que geraram evidência).
+	measure 'Riscos com Regra de Detecção' =
+			CONCATENATEX(
+			    CALCULATETABLE(VALUES(dim_risco[risco_id]), dim_risco[tem_evidencia] = "Sim"),
+			    dim_risco[risco_id], ", ", dim_risco[risco_id], ASC)
+		displayFolder: 1. Riscos
+		lineageTag: 35f10d79-e283-49f5-9ca9-8a19fb2b9559
+
+	/// Nível do risco em texto, para tooltips (a cor nunca é a única pista).
+	measure 'Nível do Risco' = SELECTEDVALUE(dim_risco[nivel])
+		isHidden
+		displayFolder: 9. Auxiliares (formatação)
+		lineageTag: fe4bf555-bd9a-4d45-8cc9-6ae4ea710e9f
+
+	/// Nome do risco, para tooltips.
+	measure 'Descrição do Risco' = SELECTEDVALUE(dim_risco[risco])
+		isHidden
+		displayFolder: 9. Auxiliares (formatação)
+		lineageTag: 18a12571-fa79-469f-9558-23fb236ed970
+
+	/// Score (probabilidade × impacto) somado; por risco, é o score do próprio risco.
+	measure 'Score do Risco' = SUM(dim_risco[score])
+		formatString: 0
+		displayFolder: 1. Riscos
+		lineageTag: a376d093-ea0a-42b7-b6e3-b07a2763de2e
+
+	measure 'Cor do Nível' = SWITCH(SELECTEDVALUE(dim_risco[nivel]), "Crítico", "#C0392B", "Alto", "#E67E22", "Médio", "#F1C40F", "Baixo", "#27AE60", "#94A3B8")
+		isHidden
+		displayFolder: 9. Auxiliares (formatação)
+		lineageTag: 9b7a0788-0626-4c46-a439-c9d9da5c4143
+
+	column risco_id
+		dataType: string
+		lineageTag: 40943ee9-cbe3-4416-b9ed-5aa53348b70e
+		summarizeBy: none
+		sourceColumn: risco_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column risco
+		dataType: string
+		lineageTag: 77825651-37cd-4621-8d30-e2ca1f8bbc86
+		summarizeBy: none
+		sourceColumn: risco
+
+		annotation SummarizationSetBy = Automatic
+
+	column ameaca
+		dataType: string
+		lineageTag: 853df4cb-339b-472a-a1c4-0827f5cae303
+		summarizeBy: none
+		sourceColumn: ameaca
+
+		annotation SummarizationSetBy = Automatic
+
+	column probabilidade
+		dataType: int64
+		formatString: 0
+		lineageTag: 2ee0c4c6-b56f-4442-9e34-20794a319c1c
+		summarizeBy: sum
+		sourceColumn: probabilidade
+
+		annotation SummarizationSetBy = Automatic
+
+	column impacto
+		dataType: int64
+		formatString: 0
+		lineageTag: 0de5def5-7f35-46aa-a2ce-e515caa57401
+		summarizeBy: sum
+		sourceColumn: impacto
+
+		annotation SummarizationSetBy = Automatic
+
+	column score
+		dataType: int64
+		formatString: 0
+		lineageTag: 844c7013-2074-402e-9af9-b38c8b59d09a
+		summarizeBy: sum
+		sourceColumn: score
+
+		annotation SummarizationSetBy = Automatic
+
+	column nivel
+		dataType: string
+		lineageTag: 4d28dab4-f606-4989-88c6-6f59c2b43b7b
+		summarizeBy: none
+		sourceColumn: nivel
+		sortByColumn: nivel_ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column controle_atual
+		dataType: string
+		lineageTag: 01e61044-63a1-438a-ad8a-c16140d56b41
+		summarizeBy: none
+		sourceColumn: controle_atual
+
+		annotation SummarizationSetBy = Automatic
+
+	column evidencia_esperada
+		dataType: string
+		lineageTag: 34fefba0-a6b9-4cb7-a74c-87c000390b2c
+		summarizeBy: none
+		sourceColumn: evidencia_esperada
+
+		annotation SummarizationSetBy = Automatic
+
+	column qtd_alertas
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: bd400a2d-d168-4526-bee5-60c0043136b1
+		summarizeBy: sum
+		sourceColumn: qtd_alertas
+
+		annotation SummarizationSetBy = Automatic
+
+	column tem_evidencia
+		dataType: string
+		lineageTag: 1ee72788-e405-4d15-9722-4796b58f6a12
+		summarizeBy: none
+		sourceColumn: tem_evidencia
+
+		annotation SummarizationSetBy = Automatic
+
+	column nivel_ordem
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2a09017b-32b3-495c-a245-a4494548cdd8
+		summarizeBy: sum
+		sourceColumn: nivel_ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Sugestão de controle prático para o risco (proposta do projeto, não auditada).
+	column controle_recomendado
+		dataType: string
+		lineageTag: c039bcab-988d-43dc-a5a3-c9f23635c8cf
+		summarizeBy: none
+		sourceColumn: controle_recomendado
+
+		annotation SummarizationSetBy = Automatic
+
+	/// Sim quando o risco é Crítico ou Alto e não teve evidência nos logs: falta telemetria para detectá-lo.
+	column ponto_cego = IF(dim_risco[nivel] IN {"Crítico", "Alto"} && dim_risco[tem_evidencia] = "Não", "Sim", "Não")
+		isHidden
+		lineageTag: f04bd4b6-fe52-4a53-ba3c-abba18a5efaf
+		summarizeBy: none
+
+	/// Código do risco com marcador de ponto cego, para eixos e tabelas.
+	column 'Risco (rótulo)' = dim_risco[risco_id] & IF(dim_risco[ponto_cego] = "Sim", "  ⚠ ponto cego", "")
+		lineageTag: 6d85c4ab-056a-41be-94e5-d26a50dbdda6
+		summarizeBy: none
+
+	partition dim_risco = m
+		mode: import
+		source =
+				let
+				  Origem = Csv.Document(File.Contents(PastaDados & "dim_risco.csv"), [Delimiter = ",", Columns = 13, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(Origem, [PromoteAllScalars = true]),
+				  #"Tipo de coluna alterado" = Table.TransformColumnTypes(#"Cabeçalhos promovidos", {{"risco_id", type text}, {"risco", type text}, {"ameaca", type text}, {"probabilidade", Int64.Type}, {"impacto", Int64.Type}, {"score", Int64.Type}, {"nivel", type text}, {"controle_atual", type text}, {"evidencia_esperada", type text}, {"qtd_alertas", Int64.Type}, {"tem_evidencia", type text}, {"nivel_ordem", Int64.Type}, {"controle_recomendado", type text}})
+				in
+				  #"Tipo de coluna alterado"
+
+	annotation PBI_ResultType = Table
+

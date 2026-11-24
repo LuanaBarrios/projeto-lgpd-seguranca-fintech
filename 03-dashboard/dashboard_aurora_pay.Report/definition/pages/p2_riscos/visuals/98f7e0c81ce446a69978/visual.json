@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "98f7e0c81ce446a69978",
+  "position": {
+    "x": 215,
+    "y": 664,
+    "width": 1050,
+    "height": 24,
+    "z": 500,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Nota: R07 (fornecedor de KYC) e R09 (revisão humana de crédito) não são observáveis em logs de acesso — “sem evidência” não significa “sem risco”.",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "9pt",
+                      "fontStyle": "italic",
+                      "color": "#CBD5E1"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "left"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

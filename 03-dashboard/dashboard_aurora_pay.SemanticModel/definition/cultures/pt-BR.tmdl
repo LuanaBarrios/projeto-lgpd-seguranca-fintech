@@ -1,0 +1,5125 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "dim_impacto.impacto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_impacto",
+			          "ConceptualProperty": "Impacto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "impacto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Impacto ↓": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_probabilidade.probabilidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_probabilidade",
+			          "ConceptualProperty": "Probabilidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "probabilidade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Probabilidade →": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.riscos_na_célula": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Riscos na Célula"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "riscos na célula": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Riscos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.riscos_críticos_e_altos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Riscos Críticos e Altos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "riscos críticos e altos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Riscos críticos ou altos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.cobertura_de_detecção": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "% Cobertura de Detecção"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "% cobertura de detecção": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentage cobertura de detecção": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "pct cobertura de detecção": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Cobertura de detecção": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.riscos_com_regra_de_detecção": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Riscos com Regra de Detecção"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "riscos com regra de detecção": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Riscos com regra de detecção implementada": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.total_riscos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Total Riscos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total riscos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate risco": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall risco": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Riscos mapeados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.risco_rótulo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Risco (rótulo)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "risco (rótulo)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Risco": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.descrição_do_risco": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Descrição do Risco"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "descrição do risco": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Descrição": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.nível_do_risco": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Nível do Risco"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "nível do risco": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Nível": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.score_do_risco": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Score do Risco"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "score do risco": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Score": {
+			            "State": "Generated",
+			            "Weight": 0.675
+			          }
+			        },
+			        {
+			          "Score (P × I)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.controle_recomendado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Controle Recomendado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "controle recomendado": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Controle sugerido": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.riscos_sem_evidência": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Riscos sem Evidência"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "riscos sem evidência": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Riscos sem evidência nos logs": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.risco": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "risco"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "risco": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Descrição": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Descrição do risco": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.nivel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "nivel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nivel": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Nível": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Nível do risco": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "score"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "score": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "tally": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "result": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.tem_evidencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "tem_evidencia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tem evidencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tem_evidencia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.controle_recomendado1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "controle_recomendado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "controle recomendado": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "controle_recomendado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Controle sugerido": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.riscos_com_evidência": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Riscos com Evidência"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "riscos com evidência": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Riscos com evidência nos logs": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.risco_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "risco_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "risco id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "risco_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "risco identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "risco identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "risco identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "risco credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Risco": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.alertas_com_zero": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "Alertas (com zero)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alertas (com zero)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Alertas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.total_alertas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "Total Alertas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total alertas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate alerta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall alerta": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Alertas detectados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.usuario_ou_origem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "usuario_ou_origem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "usuario ou origem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "usuario_ou_origem": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Usuário / origem": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.inicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "inicio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Início": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fato_alerta.severidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "severidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "severidade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Severidade do alerta": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.evidencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "evidencia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "evidencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Evidência": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.alertas_fora_do_expediente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "Alertas Fora do Expediente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "alertas fora do expediente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_data.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_data",
+			          "ConceptualProperty": "Data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_inventario.categoria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "categoria"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Categoria de dado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.dado_sensivel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "dado_sensivel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dado sensivel": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dado_sensivel": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Dado sensível": {
+			            "State": "Generated",
+			            "Weight": 0.675
+			          }
+			        },
+			        {
+			          "Dado sensível (art. 5º II)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.base_legal_artigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "Base legal (artigo)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base legal (artigo)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Base legal": {
+			            "State": "Generated",
+			            "Weight": 0.675
+			          }
+			        },
+			        {
+			          "Base legal (LGPD)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.total_categorias": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "Total Categorias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total categorias": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate categoria": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall categoria": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Categorias": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Categorias de dados pessoais": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.dados_sensíveis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "Dados Sensíveis"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dados sensíveis": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Categorias com dado sensível": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "ponte_risco_dado.riscos_que_afetam_o_dado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ponte_risco_dado",
+			          "ConceptualProperty": "Riscos que Afetam o Dado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "riscos que afetam o dado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Nº de riscos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim risco": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_risco": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.ameaca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "ameaca"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ameaca": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.probabilidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "probabilidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "probabilidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.impacto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "impacto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "impacto": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.controle_atual": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "controle_atual"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "controle atual": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "controle_atual": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.evidencia_esperada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "evidencia_esperada"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "evidencia esperada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "evidencia_esperada": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.qtd_alerta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "qtd_alertas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "qtd alerta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd_alertas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.nivel_ordem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "nivel_ordem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "nivel ordem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nivel_ordem": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.ponto_cego": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "ponto_cego"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "ponto cego": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ponto_cego": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.score_médio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Score Médio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "score médio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.cor_do_score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Cor do Score"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cor do score": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cor do notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cor do slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cor do groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cor do nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cor do cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cor do mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cor do total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "cor do tally": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "cor do grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "cor do result": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.cor_do_texto_da_célula": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Cor do Texto da Célula"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cor do texto da célula": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.cor_do_texto_da_linha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Cor do Texto da Linha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cor do texto da linha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.fundo_da_linha": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Fundo da Linha"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "fundo da linha": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_risco.cor_do_nível": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_risco",
+			          "ConceptualProperty": "Cor do Nível"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cor do nível": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fato alerta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fato_alertas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.alerta_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "alerta_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "alerta id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "alerta_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "alerta identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "alerta identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "alerta identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "alerta credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.risco_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "risco_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "risco id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "risco_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "risco identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "risco identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "risco identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "risco credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.tipo_origem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "tipo_origem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo origem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tipo_origem": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.inicio.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "VariationSource": "inicio",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.inicio.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "VariationSource": "inicio",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Início ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.inicio.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "VariationSource": "inicio",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Início trimestre": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.inicio.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "VariationSource": "inicio",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Início mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.inicio.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "VariationSource": "inicio",
+			          "VariationSet": "Variação",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Início dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fato_alerta.hora": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "hora"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hora": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.fora_do_expediente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "fora_do_expediente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fora do expediente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "forum do expediente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "fora_do_expediente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_alerta.cor_da_severidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_alertas",
+			          "ConceptualProperty": "Cor da Severidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "cor da severidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim inventario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_inventario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.dado_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "dado_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dado id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dado_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dado": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dado identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dado identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dado identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dado credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.campos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "campos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "campos": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.arquivo_origem": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "arquivo_origem"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "arquivo origem": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "arquivo_origem": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.titular": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "titular"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "titular": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.sensivel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "sensivel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sensivel": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.finalidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "finalidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "finalidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.base_legal_proposta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "base_legal_proposta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base legal proposta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "base_legal_proposta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.sistema": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "sistemas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sistema": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.quem_acessa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "quem_acessa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quem acessa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quem_acessa": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.compartilhamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "compartilhamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "compartilhamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_inventario.retencao_proposta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_inventario",
+			          "ConceptualProperty": "retencao_proposta"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "retencao proposta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "retencao_proposta": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "ponte_risco_dado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ponte_risco_dado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ponte risco dado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ponte_risco_dado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "ponte_risco_dado.risco_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ponte_risco_dado",
+			          "ConceptualProperty": "risco_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "risco id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "risco_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "risco identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "risco identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "risco identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "risco credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "ponte_risco_dado.dado_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ponte_risco_dado",
+			          "ConceptualProperty": "dado_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dado id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dado_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dado": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dado identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dado identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dado identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dado credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_data"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_data": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_data.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_data",
+			          "ConceptualProperty": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_data.mês_num": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_data",
+			          "ConceptualProperty": "Mês Num"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "mês num": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mê num": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "mê number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_data.dia_da_semana": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_data",
+			          "ConceptualProperty": "Dia da semana"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia da semana": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_data.dia_da_semana_num": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_data",
+			          "ConceptualProperty": "Dia da semana Num"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dia da semana num": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dia da semana number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "dim_impacto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_impacto"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim impacto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_impacto": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_probabilidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_probabilidade"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim probabilidade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_probabilidade": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "dim_impacto_has_impacto": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_impacto"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_impacto": {
+			          "Target": {
+			            "Entity": "dim_impacto"
+			          }
+			        },
+			        "dim_impacto.impacto": {
+			          "Target": {
+			            "Entity": "dim_impacto.impacto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_impacto"
+			            },
+			            "Object": {
+			              "Role": "dim_impacto.impacto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_impactos_have_impactos"
+			        }
+			      ]
+			    },
+			    "dim_probabilidade_has_probabilidade": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_probabilidade"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_probabilidade": {
+			          "Target": {
+			            "Entity": "dim_probabilidade"
+			          }
+			        },
+			        "dim_probabilidade.probabilidade": {
+			          "Target": {
+			            "Entity": "dim_probabilidade.probabilidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_probabilidade"
+			            },
+			            "Object": {
+			              "Role": "dim_probabilidade.probabilidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_probabilidades_have_probabilidades"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_riscos_críticos_e_altos": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.riscos_críticos_e_altos": {
+			          "Target": {
+			            "Entity": "dim_risco.riscos_críticos_e_altos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.riscos_críticos_e_altos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_riscos_críticos_e_altos"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_cobertura_de_detecção": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.cobertura_de_detecção": {
+			          "Target": {
+			            "Entity": "dim_risco.cobertura_de_detecção"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.cobertura_de_detecção"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have__cobertura_de_detecção"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_riscos_com_regra_de_detecção": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.riscos_com_regra_de_detecção": {
+			          "Target": {
+			            "Entity": "dim_risco.riscos_com_regra_de_detecção"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.riscos_com_regra_de_detecção"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_riscos_com_regra_de_detecção"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_total_riscos": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.total_riscos": {
+			          "Target": {
+			            "Entity": "dim_risco.total_riscos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.total_riscos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_total_riscos"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_risco_rótulo": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.risco_rótulo": {
+			          "Target": {
+			            "Entity": "dim_risco.risco_rótulo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.risco_rótulo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_risco_rótulo"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_score_do_risco": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.score_do_risco": {
+			          "Target": {
+			            "Entity": "dim_risco.score_do_risco"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.score_do_risco"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_score_do_risco"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_riscos_sem_evidência": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.riscos_sem_evidência": {
+			          "Target": {
+			            "Entity": "dim_risco.riscos_sem_evidência"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.riscos_sem_evidência"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_riscos_sem_evidência"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_risco": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.risco": {
+			          "Target": {
+			            "Entity": "dim_risco.risco"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.risco"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_riscos"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_nivel": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.nivel": {
+			          "Target": {
+			            "Entity": "dim_risco.nivel"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.nivel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_nivels"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_score": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.score": {
+			          "Target": {
+			            "Entity": "dim_risco.score"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.score"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_scores"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_tem_evidencia": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.tem_evidencia": {
+			          "Target": {
+			            "Entity": "dim_risco.tem_evidencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.tem_evidencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_tem_evidencias"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_controle_recomendado1": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.controle_recomendado1": {
+			          "Target": {
+			            "Entity": "dim_risco.controle_recomendado1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.controle_recomendado1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_controle_recomendados"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_riscos_com_evidência": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.riscos_com_evidência": {
+			          "Target": {
+			            "Entity": "dim_risco.riscos_com_evidência"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.riscos_com_evidência"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_riscos_com_evidência"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_risco_id": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.risco_id": {
+			          "Target": {
+			            "Entity": "dim_risco.risco_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.risco_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_risco_ids"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_alertas_com_zero": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "fato_alerta.alertas_com_zero": {
+			          "Target": {
+			            "Entity": "fato_alerta.alertas_com_zero"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.alertas_com_zero"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_alertas_com_zero"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_total_alertas": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "fato_alerta.total_alertas": {
+			          "Target": {
+			            "Entity": "fato_alerta.total_alertas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.total_alertas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_total_alertas"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_usuario_ou_origem": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "fato_alerta.usuario_ou_origem": {
+			          "Target": {
+			            "Entity": "fato_alerta.usuario_ou_origem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.usuario_ou_origem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_usuario_ou_origems"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_inicio": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "fato_alerta.inicio": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_inicios"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_severidade": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "fato_alerta.severidade": {
+			          "Target": {
+			            "Entity": "fato_alerta.severidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.severidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_severidades"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_evidencia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "fato_alerta.evidencia": {
+			          "Target": {
+			            "Entity": "fato_alerta.evidencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.evidencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_evidencias"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_alertas_fora_do_expediente": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "fato_alerta.alertas_fora_do_expediente": {
+			          "Target": {
+			            "Entity": "fato_alerta.alertas_fora_do_expediente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.alertas_fora_do_expediente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_alertas_fora_do_expediente"
+			        }
+			      ]
+			    },
+			    "dim_data_has_data": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_data": {
+			          "Target": {
+			            "Entity": "dim_data"
+			          }
+			        },
+			        "dim_data.data": {
+			          "Target": {
+			            "Entity": "dim_data.data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_data"
+			            },
+			            "Object": {
+			              "Role": "dim_data.data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_data_have_data"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_categoria": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.categoria": {
+			          "Target": {
+			            "Entity": "dim_inventario.categoria"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.categoria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_categorias"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_dado_sensivel": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.dado_sensivel": {
+			          "Target": {
+			            "Entity": "dim_inventario.dado_sensivel"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.dado_sensivel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_dado_sensivels"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_base_legal_artigo": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.base_legal_artigo": {
+			          "Target": {
+			            "Entity": "dim_inventario.base_legal_artigo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.base_legal_artigo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_base_legal_artigo"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_total_categorias": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.total_categorias": {
+			          "Target": {
+			            "Entity": "dim_inventario.total_categorias"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.total_categorias"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_total_categorias"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_dados_sensíveis": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.dados_sensíveis": {
+			          "Target": {
+			            "Entity": "dim_inventario.dados_sensíveis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.dados_sensíveis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_dados_sensíveis"
+			        }
+			      ]
+			    },
+			    "ponte_risco_dado_has_riscos_que_afetam_o_dado": {
+			      "Binding": {
+			        "ConceptualEntity": "ponte_risco_dado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ponte_risco_dado": {
+			          "Target": {
+			            "Entity": "ponte_risco_dado"
+			          }
+			        },
+			        "ponte_risco_dado.riscos_que_afetam_o_dado": {
+			          "Target": {
+			            "Entity": "ponte_risco_dado.riscos_que_afetam_o_dado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ponte_risco_dado"
+			            },
+			            "Object": {
+			              "Role": "ponte_risco_dado.riscos_que_afetam_o_dado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ponte_risco_dadoes_have_riscos_que_afetam_o_dado"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_ameaca": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.ameaca": {
+			          "Target": {
+			            "Entity": "dim_risco.ameaca"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.ameaca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_ameacas"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_controle_atual": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.controle_atual": {
+			          "Target": {
+			            "Entity": "dim_risco.controle_atual"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.controle_atual"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_controle_atuals"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_evidencia_esperada": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.evidencia_esperada": {
+			          "Target": {
+			            "Entity": "dim_risco.evidencia_esperada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.evidencia_esperada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_evidencia_esperadas"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_score_médio": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_risco.score_médio": {
+			          "Target": {
+			            "Entity": "dim_risco.score_médio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_risco.score_médio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_score_médio"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_tipo_origem": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "fato_alerta.tipo_origem": {
+			          "Target": {
+			            "Entity": "fato_alerta.tipo_origem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.tipo_origem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_tipo_origems"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_hora": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "fato_alerta.hora": {
+			          "Target": {
+			            "Entity": "fato_alerta.hora"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.hora"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_horas"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_fora_do_expediente": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "fato_alerta.fora_do_expediente": {
+			          "Target": {
+			            "Entity": "fato_alerta.fora_do_expediente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.fora_do_expediente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_fora_do_expedientes"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_campos": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.campos": {
+			          "Target": {
+			            "Entity": "dim_inventario.campos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.campos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_campos"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_arquivo_origem": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.arquivo_origem": {
+			          "Target": {
+			            "Entity": "dim_inventario.arquivo_origem"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.arquivo_origem"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_arquivo_origems"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_titular": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.titular": {
+			          "Target": {
+			            "Entity": "dim_inventario.titular"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.titular"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_titulars"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_sensivel": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.sensivel": {
+			          "Target": {
+			            "Entity": "dim_inventario.sensivel"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.sensivel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_sensivels"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_finalidade": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.finalidade": {
+			          "Target": {
+			            "Entity": "dim_inventario.finalidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.finalidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_finalidades"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_base_legal_proposta": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.base_legal_proposta": {
+			          "Target": {
+			            "Entity": "dim_inventario.base_legal_proposta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.base_legal_proposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_base_legal_propostas"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_sistema": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.sistema": {
+			          "Target": {
+			            "Entity": "dim_inventario.sistema"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.sistema"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_sistemas"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_quem_acessa": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.quem_acessa": {
+			          "Target": {
+			            "Entity": "dim_inventario.quem_acessa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.quem_acessa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_quem_acessas"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_compartilhamento": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.compartilhamento": {
+			          "Target": {
+			            "Entity": "dim_inventario.compartilhamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.compartilhamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_compartilhamentos"
+			        }
+			      ]
+			    },
+			    "dim_inventario_has_retencao_proposta": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_inventario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          }
+			        },
+			        "dim_inventario.retencao_proposta": {
+			          "Target": {
+			            "Entity": "dim_inventario.retencao_proposta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario.retencao_proposta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_retencao_propostas"
+			        }
+			      ]
+			    },
+			    "dim_data_has_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_data": {
+			          "Target": {
+			            "Entity": "dim_data"
+			          }
+			        },
+			        "dim_data.mê": {
+			          "Target": {
+			            "Entity": "dim_data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_data"
+			            },
+			            "Object": {
+			              "Role": "dim_data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_data_have_mê"
+			        }
+			      ]
+			    },
+			    "dim_data_has_dia_da_semana": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_data"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_data": {
+			          "Target": {
+			            "Entity": "dim_data"
+			          }
+			        },
+			        "dim_data.dia_da_semana": {
+			          "Target": {
+			            "Entity": "dim_data.dia_da_semana"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_data"
+			            },
+			            "Object": {
+			              "Role": "dim_data.dia_da_semana"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_data_have_dia_da_semanas"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_dim_probabilidade": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_probabilidade": {
+			          "Target": {
+			            "Entity": "dim_probabilidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_probabilidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_dim_probabilidades"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_probabilidade"
+			            },
+			            "Object": {
+			              "Role": "dim_risco"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_probabilidades_have_dim_riscos"
+			        }
+			      ]
+			    },
+			    "dim_risco_has_dim_impacto": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_risco"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        },
+			        "dim_impacto": {
+			          "Target": {
+			            "Entity": "dim_impacto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "dim_impacto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_dim_impactos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_impacto"
+			            },
+			            "Object": {
+			              "Role": "dim_risco"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_impactos_have_dim_riscos"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_dim_risco": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "dim_risco"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_dim_riscos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_fato_alertas"
+			        }
+			      ]
+			    },
+			    "fato_alerta_has_dim_data": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta": {
+			          "Target": {
+			            "Entity": "fato_alerta"
+			          }
+			        },
+			        "dim_data": {
+			          "Target": {
+			            "Entity": "dim_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta"
+			            },
+			            "Object": {
+			              "Role": "dim_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_alertas_have_dim_data"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_data"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_data_have_fato_alertas"
+			        }
+			      ]
+			    },
+			    "ponte_risco_dado_has_dim_risco": {
+			      "Binding": {
+			        "ConceptualEntity": "ponte_risco_dado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ponte_risco_dado": {
+			          "Target": {
+			            "Entity": "ponte_risco_dado"
+			          }
+			        },
+			        "dim_risco": {
+			          "Target": {
+			            "Entity": "dim_risco"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ponte_risco_dado"
+			            },
+			            "Object": {
+			              "Role": "dim_risco"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ponte_risco_dadoes_have_dim_riscos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_risco"
+			            },
+			            "Object": {
+			              "Role": "ponte_risco_dado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_riscos_have_ponte_risco_dadoes"
+			        }
+			      ]
+			    },
+			    "ponte_risco_dado_has_dim_inventario": {
+			      "Binding": {
+			        "ConceptualEntity": "ponte_risco_dado"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "ponte_risco_dado": {
+			          "Target": {
+			            "Entity": "ponte_risco_dado"
+			          }
+			        },
+			        "dim_inventario": {
+			          "Target": {
+			            "Entity": "dim_inventario"
+			          },
+			          "Nouns": [
+			            {
+			              "dado": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "ponte_risco_dado"
+			            },
+			            "Object": {
+			              "Role": "dim_inventario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ponte_risco_dadoes_have_dim_inventarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_inventario"
+			            },
+			            "Object": {
+			              "Role": "ponte_risco_dado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_inventarios_have_ponte_risco_dadoes"
+			        }
+			      ]
+			    },
+			    "fato_alerta_inicio_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta.inicio": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio"
+			          }
+			        },
+			        "fato_alerta.inicio.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "inicios_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "fato_alerta_inicio_hierarquia_de_data_has_fato_alerta_inicio_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta.inicio.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.hierarquia_de_data"
+			          }
+			        },
+			        "fato_alerta.inicio.ano": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "fato_alerta_inicio_hierarquia_de_data_has_fato_alerta_inicio_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta.inicio.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.hierarquia_de_data"
+			          }
+			        },
+			        "fato_alerta.inicio.trimestre": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "fato_alerta_inicio_hierarquia_de_data_has_fato_alerta_inicio_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta.inicio.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.hierarquia_de_data"
+			          }
+			        },
+			        "fato_alerta.inicio.mê": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "fato_alerta_inicio_hierarquia_de_data_has_fato_alerta_inicio_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta.inicio.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.hierarquia_de_data"
+			          }
+			        },
+			        "fato_alerta.inicio.dia": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "fato_alerta_inicio_ano_has_fato_alerta_inicio_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta.inicio.ano": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.ano"
+			          }
+			        },
+			        "fato_alerta.inicio.trimestre": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.ano"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_alerta.inicio.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "fato_alerta_inicio_trimestre_has_fato_alerta_inicio_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta.inicio.trimestre": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.trimestre"
+			          }
+			        },
+			        "fato_alerta.inicio.mê": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.trimestre"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_alerta.inicio.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "fato_alerta_inicio_mê_has_fato_alerta_inicio_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_alertas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_alerta.inicio.mê": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.mê"
+			          }
+			        },
+			        "fato_alerta.inicio.dia": {
+			          "Target": {
+			            "Entity": "fato_alerta.inicio.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.mê"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.dia"
+			            },
+			            "Object": {
+			              "Role": "fato_alerta.inicio.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fato_alerta.inicio.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fato_alerta.inicio.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

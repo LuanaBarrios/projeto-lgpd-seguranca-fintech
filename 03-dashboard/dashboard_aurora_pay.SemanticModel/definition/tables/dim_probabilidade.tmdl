@@ -1,0 +1,15 @@
+/// Eixo de 1 a 5 da matriz de risco (mostra a grade completa, mesmo sem riscos).
+table dim_probabilidade
+	lineageTag: df0ce021-a169-4dc7-aa31-7ca6abcdee41
+
+	column Probabilidade
+		dataType: int64
+		formatString: 0
+		lineageTag: 350eaf9c-832e-4606-9c9e-a95685183c57
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Probabilidade]
+
+	partition dim_probabilidade = calculated
+		source = SELECTCOLUMNS(GENERATESERIES(1, 5, 1), "Probabilidade", [Value])
+

@@ -50,6 +50,25 @@ def subir_nivel(nivel: str, passos: int = 1) -> str:
     return NIVEIS[i]
 
 
+def brl(valor: float) -> str:
+    """Formata em reais no padrão brasileiro: 15424.32 -> 'R$ 15.424,32'."""
+    texto = f"{valor:,.2f}"  # padrão americano: 15,424.32
+    return "R$ " + texto.replace(",", "#").replace(".", ",").replace("#", ".")
+
+
+def decimal_br(valor: float, casas: int) -> str:
+    """Número com vírgula decimal: 2.2 -> '2,2'."""
+    return f"{valor:.{casas}f}".replace(".", ",")
+
+
+def chance_em_texto(p: float) -> str:
+    """Traduz uma probabilidade pequena para linguagem simples: 3.4e-07 -> 'menos de 1 em 1 milhão'."""
+    for limite, nome in ((1e-9, "1 bilhão"), (1e-6, "1 milhão"), (1e-3, "mil")):
+        if p < limite:
+            return f"menos de 1 em {nome}"
+    return f"cerca de {decimal_br(p * 100, 1)}%"
+
+
 def ip_externo(serie: pd.Series) -> pd.Series:
     return ~serie.fillna("").str.startswith(PREFIXO_REDE_INTERNA)
 
@@ -163,11 +182,11 @@ def detectar_r01(d, expediente) -> list[dict]:
             "usuario_ou_origem": usuario,
             "inicio": total_vip["timestamp"][total_vip["timestamp"].dt.date == g["dia"].iloc[0]].min(),
             "evidencia": (
-                f"{len(g)} dias com consultas concentradas em clientes VIP "
-                f"({int(g['vips_distintos'].sum())} VIPs distintos nesses dias, "
-                f"esperado ~{g['esperado'].sum():.1f}; menor p={g['p'].min():.1e}). "
-                f"VIP = {pct:.1%} das consultas do usuário vs {taxa_base:.0%} da base. "
-                f"Setor: {setor.get(usuario, '?')}. Dias: {', '.join(str(x) for x in g['dia'])}"
+                f"{len(g)} dias com consultas concentradas em clientes VIP: "
+                f"{int(g['vips_distintos'].sum())} VIPs distintos, contra ~{decimal_br(g['esperado'].sum(), 1)} esperados "
+                f"— concentração muito acima do esperado (chance de ser acaso: {chance_em_texto(g['p'].min())}). "
+                f"VIP = {decimal_br(pct * 100, 1)}% das consultas do usuário, contra {taxa_base:.0%} da base. "
+                f"Setor: {setor.get(usuario, '?')}. Dias: {', '.join(x.strftime('%d/%m') for x in g['dia'])}"
             ),
             "severidade": "Alto" if len(g) < 5 else "Crítico",
         })
@@ -417,8 +436,8 @@ def detectar_r06(d, expediente) -> list[dict]:
             "inicio": n["data_hora"],
             "evidencia": (
                 f"Dispositivo nunca visto + {len(janela)} Pix em {duracao:.0f} min somando "
-                f"R$ {janela['valor'].sum():,.2f} (maior valor anterior do cliente: R$ {maior_antes:,.2f}; "
-                f"mediana anterior R$ {antes['valor'].median():,.2f})"
+                f"{brl(janela['valor'].sum())} (maior valor anterior do cliente: {brl(maior_antes)}; "
+                f"mediana anterior {brl(antes['valor'].median())})"
                 + ("; madrugada/fora do expediente" if fora_do_expediente(janela["data_hora"], expediente).any() else "")
             ),
             "severidade": "Crítico",

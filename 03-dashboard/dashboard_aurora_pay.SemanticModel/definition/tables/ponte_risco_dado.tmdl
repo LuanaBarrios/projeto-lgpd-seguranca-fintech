@@ -1,0 +1,38 @@
+table ponte_risco_dado
+	lineageTag: c03b735a-6788-4981-a1a2-6f63e1a56149
+
+	/// Quantos riscos da matriz afetam a categoria de dado (via tabela ponte).
+	measure 'Riscos que Afetam o Dado' = COUNTROWS(ponte_risco_dado)
+		formatString: 0
+		displayFolder: 3. Inventário LGPD
+		lineageTag: ea7b920f-bb20-441b-a62b-6ddb687cb08d
+
+	column risco_id
+		dataType: string
+		isHidden
+		lineageTag: 7f071fca-810a-4852-a1b3-cdedfbe1b188
+		summarizeBy: none
+		sourceColumn: risco_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column dado_id
+		dataType: string
+		isHidden
+		lineageTag: 4885f947-a0a9-4143-8096-11837bb6a11a
+		summarizeBy: none
+		sourceColumn: dado_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ponte_risco_dado = m
+		mode: import
+		source =
+				let
+				  Origem = Csv.Document(File.Contents(PastaDados & "ponte_risco_dado.csv"), [Delimiter = ",", Columns = 2, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+				  #"Cabeçalhos promovidos" = Table.PromoteHeaders(Origem, [PromoteAllScalars = true])
+				in
+				  #"Cabeçalhos promovidos"
+
+	annotation PBI_ResultType = Table
+

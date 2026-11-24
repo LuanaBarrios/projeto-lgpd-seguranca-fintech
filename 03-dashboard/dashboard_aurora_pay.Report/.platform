@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "dashboard_aurora_pay"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "736260a2-0337-44bb-9422-b46ce56bcdaa"
+  }
+}

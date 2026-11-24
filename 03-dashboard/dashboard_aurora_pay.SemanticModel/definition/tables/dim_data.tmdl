@@ -1,0 +1,48 @@
+table dim_data
+	lineageTag: b3881a7b-21b4-47fb-b7ef-8e10a8de7bcb
+	dataCategory: Time
+
+	column Data
+		isKey
+		formatString: dd/MM/yyyy
+		lineageTag: e4a6a297-b7ed-4bd6-be5a-9cf7049b1cf7
+		isNameInferred
+		sourceColumn: [Data]
+
+	column Mês
+		lineageTag: e979d909-4f51-4d7d-9500-e9673a07c664
+		isNameInferred
+		sourceColumn: [Mês]
+		sortByColumn: 'Mês Num'
+
+	column 'Mês Num'
+		isHidden
+		lineageTag: 82890908-c5de-444c-8097-2aebf6fc4716
+		isNameInferred
+		sourceColumn: [Mês Num]
+
+	column 'Dia da semana'
+		lineageTag: 4887351a-d322-4656-b404-bcaf46299946
+		isNameInferred
+		sourceColumn: [Dia da semana]
+		sortByColumn: 'Dia da semana Num'
+
+	column 'Dia da semana Num'
+		isHidden
+		lineageTag: 13490553-ed07-4fd6-b14d-9a333e8d5685
+		isNameInferred
+		sourceColumn: [Dia da semana Num]
+
+	partition dim_data = calculated
+		source =
+				VAR base = CALENDAR(DATE(2026,8,1), DATE(2026,10,31))
+				RETURN
+				SELECTCOLUMNS(
+				    base,
+				    "Data", [Date],
+				    "Mês", FORMAT([Date], "mmm/yyyy"),
+				    "Mês Num", YEAR([Date]) * 100 + MONTH([Date]),
+				    "Dia da semana", FORMAT([Date], "dddd"),
+				    "Dia da semana Num", WEEKDAY([Date], 2)
+				)
+

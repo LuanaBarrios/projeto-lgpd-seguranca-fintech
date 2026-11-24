@@ -1,0 +1,6 @@
+/// Pasta onde estão os CSVs do modelo (termine com \). Troque aqui se clonar o projeto em outro lugar.
+expression PastaDados = "C:\Users\Usuario\Desktop\projeto-lgpd-fintech\03-dashboard\modelo\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: e2cee56e-cf96-4cc0-91ee-15375b2be505
+
+	annotation PBI_ResultType = Text
+
